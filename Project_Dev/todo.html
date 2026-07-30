@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Projet Tracker</title>
+    <link rel="stylesheet" href="personal_project_tracker.css">
+</head>
+<body>
+    <div class="app">
+  <div class="top-bar">
+    <div class="app-title">Ride app — full project tracker</div>
+    <span class="lang-badge">Primary language: JavaScript</span>
+  </div>
+
+  <div class="overall-bar">
+    <div class="bar-label"><span>Overall progress</span><span id="overallPct">0%</span></div>
+    <div class="bar-track"><div class="bar-fill" id="overallBar" style="width:0%"></div></div>
+  </div>
+
+  <div class="lang-guide">
+    <div class="lang-title">Languages & tools you will use — in order</div>
+    <div class="lang-row"><div class="lang-dot" style="background:#f2c94c"></div><div class="lang-name">JavaScript</div><div class="lang-use">All app logic, screens, and features</div><div class="lang-when">Week 1 → end</div></div>
+    <div class="lang-row"><div class="lang-dot" style="background:#61dafb"></div><div class="lang-name">React Native</div><div class="lang-use">Building mobile UI components</div><div class="lang-when">Week 2 → end</div></div>
+    <div class="lang-row"><div class="lang-dot" style="background:#ff6d00"></div><div class="lang-name">Firebase (NoSQL)</div><div class="lang-use">Database, auth, real-time data</div><div class="lang-when">Week 5 → end</div></div>
+    <div class="lang-row"><div class="lang-dot" style="background:#34a853"></div><div class="lang-name">Google Maps API</div><div class="lang-use">Maps, GPS, routing</div><div class="lang-when">Week 7 → end</div></div>
+    <div class="lang-row"><div class="lang-dot" style="background:#635bff"></div><div class="lang-name">Stripe API</div><div class="lang-use">Payments processing</div><div class="lang-when">Week 10</div></div>
+  </div>
+
+  <div class="phase-tabs" id="phaseTabs">
+    <button class="phase-tab active" onclick="filterPhase(0)">All phases</button>
+    <button class="phase-tab" onclick="filterPhase(1)">Phase 1 — Foundations</button>
+    <button class="phase-tab" onclick="filterPhase(2)">Phase 2 — Structure</button>
+    <button class="phase-tab" onclick="filterPhase(3)">Phase 3 — Features</button>
+    <button class="phase-tab" onclick="filterPhase(4)">Phase 4 — Launch</button>
+  </div>
+
+  <div id="weekList"></div>
+</div>
+<script src="project.js"></script>
+
+</body>
+</html>
+

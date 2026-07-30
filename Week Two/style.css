@@ -1,0 +1,149 @@
+:root{
+    --color-primary: #8B4513;
+    --color-secondary: #119ed6;
+    --color-background: #F5DEB3;
+    --color-bg: #FFFFFF;
+    --color-surface: #FFFFFF;
+    --color-text: #2C1810;
+    --color-text-light: #FFF8F0;
+    --color-muted: #6B5B4F;
+    --font-body: system-ui, sans-serif, apple-system, BlinkMacSystemFont,Roboto, 
+    Helvetica, Arial, sans-serif; 
+    --radius:8px;
+    --shadow:0 4px 6px rgba(0, 0, 0, 0.1);
+    --max-width: 1200px;
+}
+
+
+
+/* -- Reset & Base -- */ 
+*, *::before,
+ *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scrollbar-width: smooth;
+}
+
+body{
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+  /*  min-height: 100vh; 
+    display: flex;
+    flex-direction: column;  */ 
+}  
+
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a{
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover{
+    color: var(--color-secondary);
+}
+
+
+h1, h2, h3{
+line-height: 1.2;   
+ margin-bottom: 0.75rem;
+}
+
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.75rem;
+}
+h3{
+    font-size: 1.5rem;}
+
+p{
+    margin-bottom : 1rem;
+} 
+
+.btn{
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+
+/* Navigations    */
+
+.navbar{
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem   ;
+    position: static;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+.nav-links a{
+    color: var(--color-text-light);
+    font-weight: 500; 
+    padding: 0.25rem 0.5rem;
+}
+
+.nav-links a:hover{
+    color: var(--color-surface);
+}
+
+
+
+.here{
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-text-light);
+text-align: center;
+padding: 4rem, 1rem;
+}
+
+here-content{
+    max-width: var(--max-width);
+    margin: 0 auto;
+
+}
+
+.tagline{
+    font-size: 1.125 rem;
+    margin-botton: 1.5rem;
+    opacity: 0.9rem;
+}
