@@ -1,0 +1,42 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: auto;
+    width: 80%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+   /* background-color: #f0f0f0; */
+}
+.nav ul li{
+    display: inline;
+    margin: 0 1rem;
+
+}
+
+li a{
+    text-decoration: none;
+    color: #333;
+
+}
+
+li a:hover{
+    color: #ff1900;
+}
+
+/* Css Grid Style */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.grid-item{
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+}
